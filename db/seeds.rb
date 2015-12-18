@@ -27,4 +27,7 @@ artists.each do |artist|
       genre: result["primaryGenreName"]
     })
   end
+  User.destroy_all
+  User.create!(email:'barb@example.com', password:'pizzajammy')
+  User.create!(email:'bob@example.com', password:'pizzajammy')
 end
